@@ -109,6 +109,6 @@ class UserController extends Controller
         if (request()->is('api/*')) {
             return response()->json(['success' => 'User deleted successfully'], 200);
         }
-        return redirect()->route('admin.user.index')->with('success', 'User deleted successfully!');
+        return redirect()->route('admin.account.index')->with('success', 'User deleted successfully!');
     }
 }
