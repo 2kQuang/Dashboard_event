@@ -6,7 +6,7 @@
         <div class="be-right-navbar">
             <ul class="nav navbar-nav float-right be-user-nav">
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                        role="button" aria-expanded="false"><img src="assets\img\avatar.png" alt="Avatar"><span
+                        role="button" aria-expanded="false"><img src="{{asset('assets\img\avatar.png')}}" alt="Avatar"><span
                             class="user-name">Túpac
                             Amaru</span></a>
                     <div class="dropdown-menu" role="menu">
@@ -59,7 +59,7 @@
                                     <div class="content">
                                         <ul>
                                             <li class="notification notification-unread"><a href="#">
-                                                    <div class="image"><img src="assets\img\avatar2.png"
+                                                    <div class="image"><img src="{{asset('assets\img\avatar2.png')}}"
                                                             alt="Avatar"></div>
                                                     <div class="notification-info">
                                                         <div class="text"><span class="user-name">Jessica
@@ -68,7 +68,7 @@
                                                     </div>
                                                 </a></li>
                                             <li class="notification"><a href="#">
-                                                    <div class="image"><img src="assets\img\avatar3.png"
+                                                    <div class="image"><img src="{{asset('assets\img\avatar3.png')}}"
                                                             alt="Avatar"></div>
                                                     <div class="notification-info">
                                                         <div class="text"><span class="user-name">Joel
@@ -77,7 +77,7 @@
                                                     </div>
                                                 </a></li>
                                             <li class="notification"><a href="#">
-                                                    <div class="image"><img src="assets\img\avatar4.png"
+                                                    <div class="image"><img src="{{asset('assets\img\avatar4.png')}}"
                                                             alt="Avatar"></div>
                                                     <div class="notification-info">
                                                         <div class="text"><span class="user-name">John
@@ -86,7 +86,7 @@
                                                     </div>
                                                 </a></li>
                                             <li class="notification"><a href="#">
-                                                    <div class="image"><img src="assets\img\avatar5.png"
+                                                    <div class="image"><img src="{{asset('assets\img\avatar5.png')}}"
                                                             alt="Avatar"></div>
                                                     <div class="notification-info"><span class="text"><span
                                                                 class="user-name">Emily Carter</span> is now
@@ -110,24 +110,24 @@
                                 <div class="content">
                                     <div class="row">
                                         <div class="col"><a class="connection-item" href="#"><img
-                                                    src="assets\img\github.png" alt="Github"><span>GitHub</span></a>
+                                                    src="{{asset('assets\img\github.png')}}" alt="Github"><span>GitHub</span></a>
                                         </div>
                                         <div class="col"><a class="connection-item" href="#"><img
-                                                    src="assets\img\bitbucket.png"
+                                                    src="{{asset('assets\img\bitbucket.png')}}"
                                                     alt="Bitbucket"><span>Bitbucket</span></a></div>
                                         <div class="col"><a class="connection-item" href="#"><img
-                                                    src="assets\img\slack.png" alt="Slack"><span>Slack</span></a>
+                                                    src="{{asset('assets\img\slack.png')}}" alt="Slack"><span>Slack</span></a>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col"><a class="connection-item" href="#"><img
-                                                    src="assets\img\dribbble.png"
+                                                    src="{{asset('assets\img\dribbble.png')}}"
                                                     alt="Dribbble"><span>Dribbble</span></a></div>
                                         <div class="col"><a class="connection-item" href="#"><img
-                                                    src="assets\img\mail_chimp.png" alt="Mail Chimp"><span>Mail
+                                                    src="{{asset('assets\img\mail_chimp.png')}}" alt="Mail Chimp"><span>Mail
                                                     Chimp</span></a></div>
                                         <div class="col"><a class="connection-item" href="#"><img
-                                                    src="assets\img\dropbox.png"
+                                                    src="{{asset('assets\img\dropbox.png')}}"
                                                     alt="Dropbox"><span>Dropbox</span></a></div>
                                     </div>
                                 </div>
