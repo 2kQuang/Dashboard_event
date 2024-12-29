@@ -42,9 +42,15 @@
         ]);
     }
 
+    if (request()->routeIs('admin.event.edit') || request()->routeIs('admin.event.create')) {
+        $script = array_merge($script, [
+            '/lib/summernote/summernote-bs4.min.js',
+            '/lib/summernote/summernote-ext-beagle.js',
+        ]);
+    }
+
     $script = array_merge($script, ['/js/app.js']);
 @endphp
-
 
 @foreach ($script as $file)
     <script src="{{ asset('assets' . $file) }}" type="text/javascript"></script>
@@ -59,7 +65,14 @@
 </script>
 
 
-@if (request()->routeIs('admin.account.index'))
+@if (request()->routeIs(
+        'admin.account.index',
+        'admin.category.index',
+        'admin.class.index',
+        'admin.event.index',
+        'admin.facutly.index',
+        'admin.role.index',
+        'admin.unit.index'))
     <script type="text/javascript">
         $(document).ready(function() {
             App.init();
@@ -76,6 +89,32 @@
         });
     </script>
 @endif
+
+
+
+@if (request()->routeIs('admin.event.edit') || request()->routeIs('admin.event.create'))
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Initialize Summernote
+            $('#summernote').summernote({
+                tabsize: 2,
+                height: 300, // Set editor height
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']]
+                ]
+            });
+        });
+    </script>
+@endif
+
+
 
 <script>
     setTimeout(() => {

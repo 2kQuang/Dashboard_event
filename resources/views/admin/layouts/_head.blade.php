@@ -25,9 +25,15 @@
             ]);
         }
 
+        if (request()->routeIs('admin.event.edit') || request()->routeIs('admin.event.create')) {
+            $css = array_merge($css, [
+                '/lib/summernote/summernote-bs4.css',
+            ]);
+        }
+
         $css = array_merge($css, ['/css/app.css']);
     @endphp
-
+    
     @foreach ($css as $file)
         <link rel="stylesheet" type="text/css" href="{{ asset('assets' . $file) }}">
     @endforeach
